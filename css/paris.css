@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* background: #f6c176; */
+    background-image: url("../images/index/pumpkin_bg.jpg");
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    /* background: #f6c176; */
+}
+
+#title {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 3.4em;
+    /* color: #C63D2F; */
+    color: #ffffff;
+    text-shadow: 0px 0px 150px #C63D2F;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 70px;
+    margin-top: 30px;
+    border-top: solid 2px #112D4E;
+    padding-top: 50px;
+    margin-top: 15px;
+}
+
+.image-collection {
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px #C63D2F;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.image-collection:hover {
+    box-shadow: 0px 0px 45px white;
+    scale: 1.1;
+}
+
+
+@media (max-width: 1030px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 688px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 15px;
+    }
+
+    .heading {
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 15px;
+    }
+}
